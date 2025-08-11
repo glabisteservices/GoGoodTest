@@ -1,0 +1,81 @@
+<div class="div-block-3">
+          <div class="left-div-faq">
+            <div class="div-block-4">
+              <h1 class="heading-style-h1">
+{{ section.settings.text_heading }}
+</h1>
+              <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                {% when 'faq-question' %}
+            <div li-block="FAQ-Question" class="faq-bloc">
+                    
+                  
+                    <div data-hover="false" data-delay="0" class="accordion-item w-dropdown">
+                    <div class="accordion-toggle w-dropdown-toggle">
+                      <div class="w-icon-dropdown-toggle"></div>
+                      <div class="heading-style-h4">
+{{ block.settings.text_text }}
+</div>
+                    </div>
+                    <nav class="faq-reponse w-dropdown-list">
+                      <p class="paragraph">
+{{ block.settings.text_paragraph }}
+</p>
+                    </nav>
+                  </div>
+                    
+                
+                </div>
+              {% endcase %}
+{% endfor %}
+
+    </div>
+            </div>
+          </div>
+          <div class="right-div-faq">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-2', sizes: '100vw', loading: 'lazy' }}
+{% else %}
+<img class="image-2" src="{{ 'image00005.jpeg' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'image00005-p-500.jpeg' | asset_url }} 500w, {{ 'image00005-p-800.jpeg' | asset_url }} 800w, {{ 'image00005-p-1080.jpeg' | asset_url }} 1080w, {{ 'image00005-p-1600.jpeg' | asset_url }} 1600w, {{ 'image00005-p-2000.jpeg' | asset_url }} 2000w, {{ 'image00005-p-2600.jpeg' | asset_url }} 2600w, {{ 'image00005.jpeg' | asset_url }} 3024w">
+{% endif %}</div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "FAQ",
+    "class": "faq-section",
+    "blocks": [
+        {
+            "name": "FAQ-Question",
+            "type": "faq-question"
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Heading"
+        },
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "FAQ",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "faq-question"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
