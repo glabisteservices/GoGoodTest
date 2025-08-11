@@ -1,0 +1,24 @@
+<div class="collection-intro-container">
+          <div class="collection-title-container">
+            <h1 li-object="collection.title" class="heading-style-h1">{{ collection.title }}</h1>
+          </div>
+          <div class="collection-description-container">
+            <p li-object="collection.description" class="paragraph">{{ collection.description }}</p>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Collection Hero",
+    "class": "collection-hero",
+    "presets": [
+        {
+            "name": "Collection Hero",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ],
+    "enabled_on": {
+        "templates": [
+            "collection"
+        ]
+    }
+} {% endschema %}

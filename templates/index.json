@@ -1,0 +1,171 @@
+{
+    "sections": {
+        "image_pleine_largeur": {
+            "type": "image_pleine_largeur",
+            "blocks": {
+                "image-desktop": {
+                    "name": "image-desktop",
+                    "type": "image-desktop"
+                },
+                "image-mobile": {
+                    "name": "image-mobile",
+                    "type": "image-mobile"
+                }
+            },
+            "block_order": [
+                "image-desktop",
+                "image-mobile"
+            ]
+        },
+        "header_announcement": {
+            "type": "header_announcement",
+            "blocks": {
+                "social-media-icon": {
+                    "name": "social-media-icon",
+                    "type": "social-media-icon"
+                }
+            },
+            "block_order": [
+                "social-media-icon"
+            ]
+        },
+        "bloc_de_texte": {
+            "type": "bloc_de_texte",
+            "blocks": {
+                "sous-titre": {
+                    "name": "Sous-titre",
+                    "type": "sous-titre"
+                },
+                "grand-texte": {
+                    "name": "Grand-texte",
+                    "type": "grand-texte"
+                },
+                "paragraphe": {
+                    "name": "Paragraphe",
+                    "type": "paragraphe"
+                },
+                "bouton": {
+                    "name": "Bouton",
+                    "type": "bouton"
+                }
+            },
+            "block_order": [
+                "sous-titre",
+                "grand-texte",
+                "paragraphe",
+                "bouton"
+            ]
+        },
+        "image_with_text": {
+            "type": "image_with_text"
+        },
+        "featured_products": {
+            "type": "featured_products"
+        },
+        "featured_collections": {
+            "type": "featured_collections",
+            "blocks": {
+                "block": {
+                    "type": "block",
+                    "name": "Block"
+                }
+            },
+            "block_order": [
+                "block"
+            ]
+        },
+        "blog_posts": {
+            "type": "blog_posts"
+        },
+        "picto_reassurance": {
+            "type": "picto_reassurance",
+            "blocks": {
+                "icon-et-texte": {
+                    "name": "icon-et-texte",
+                    "type": "icon-et-texte"
+                }
+            },
+            "block_order": [
+                "icon-et-texte"
+            ]
+        },
+        "custom_liquid": {
+            "type": "custom_liquid"
+        },
+        "collection_product_d": {
+            "type": "collection_product_d"
+        },
+        "newsletter": {
+            "type": "newsletter"
+        },
+        "texte_bloc_home_page": {
+            "type": "texte_bloc_home_page",
+            "blocks": {
+                "sous-titre": {
+                    "name": "Sous-titre",
+                    "type": "sous-titre"
+                },
+                "grand-texte": {
+                    "name": "Grand-texte",
+                    "type": "grand-texte"
+                },
+                "paragraphe": {
+                    "name": "Paragraphe",
+                    "type": "paragraphe"
+                },
+                "bouton": {
+                    "name": "Bouton",
+                    "type": "bouton"
+                }
+            },
+            "block_order": [
+                "sous-titre",
+                "grand-texte",
+                "paragraphe",
+                "bouton"
+            ]
+        },
+        "picto_v2": {
+            "type": "picto_v2",
+            "blocks": {
+                "icon-et-texte": {
+                    "name": "icon-et-texte",
+                    "type": "icon-et-texte"
+                }
+            },
+            "block_order": [
+                "icon-et-texte"
+            ]
+        },
+        "faq": {
+            "type": "faq",
+            "blocks": {
+                "faq-question": {
+                    "name": "FAQ-Question",
+                    "type": "faq-question"
+                }
+            },
+            "block_order": [
+                "faq-question"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "image_pleine_largeur",
+        "header_announcement",
+        "bloc_de_texte",
+        "image_with_text",
+        "featured_products",
+        "featured_collections",
+        "blog_posts",
+        "picto_reassurance",
+        "custom_liquid",
+        "collection_product_d",
+        "newsletter",
+        "texte_bloc_home_page",
+        "picto_v2",
+        "faq"
+    ]
+}
