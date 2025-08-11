@@ -1,0 +1,73 @@
+<div class="footer_newsletter-2">
+          <div class="div-block-2">
+            <div>
+              <h2 class="heading-style-h1 form-title">
+{{ section.settings.text_heading }}
+</h2>
+            </div>
+            <div class="footer_form-block w-form">
+              {% form 'customer', return_to: '/', class: 'footer_form' %}
+<div><label for="Email" class="form_field-label">
+{{ section.settings.text_paragraph }}
+</label><input class="form_input w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="{{ section.settings.placeholder_text }}" type="email" id="Email" required=""></div>
+                <div li-object="form.errors | default_errors" class="text-size-tiny-2 text-color-red">{{ form.errors | default_errors }}</div>
+                <div id="w-node-_27f5c5ce-61a7-12ab-2539-85af10bee108-01024559" class="hide-4 w-embed"><input type="hidden" name="contact[accepts_marketing]" value="false"></div><label id="w-node-_27f5c5ce-61a7-12ab-2539-85af10bee109-01024559" class="w-checkbox form_checkbox-3" name="contact[accepts_marketing]"><input type="checkbox" name="Accepts-Marketing-2" id="Accepts-Marketing-2" data-name="Accepts Marketing 2" class="w-checkbox-input form_checkbox-icon"><span class="form_checkbox-label text-size-tiny w-form-label" for="Accepts-Marketing-2">
+{{ section.settings.text_checkbox }}
+</span></label><input type="submit" data-wait="En cours..." id="w-node-_27f5c5ce-61a7-12ab-2539-85af10bee111-01024559" class="button-5 w-button" value="Je m'inscris à la Newsletter" href="{{ section.settings.url_button_link }}"> {{ section.settings.text_button_text }} </input>
+              {% endform %}
+              <div class="hide-4 w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="hide-4 w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "newsletter",
+    "class": "newsletter-form",
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Inscrivez-vous \u00e0 la newsletter et recevez 10% de r\u00e9duction sur votre commande"
+        },
+        {
+            "id": "text_paragraph",
+            "type": "text",
+            "label": "Paragraph",
+            "default": "Ne manquez plus aucune de nos nouveaut\u00e9s, conseils ou \u00e9v\u00e9nements ! "
+        },
+        {
+            "id": "text_checkbox",
+            "type": "text",
+            "label": "Checkbox",
+            "default": "En vous abonnant, vous acceptez notre <a href=\"#\" li-settings:url=\"Link\">Politique de Confidentialit\u00e9<\/a> et consentez \u00e0 recevoir des actualit\u00e9s de notre entreprise."
+        },
+        {
+            "id": "url_link",
+            "type": "url",
+            "label": "Link"
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Lorem Ipsum"
+        }
+    ],
+    "presets": [
+        {
+            "name": "newsletter",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
