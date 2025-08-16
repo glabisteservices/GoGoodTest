@@ -1,0 +1,359 @@
+{
+    "sections": {
+        "image_pleine_largeur": {
+            "type": "image_pleine_largeur",
+            "blocks": {
+                "image-desktop": {
+                    "name": "image-desktop",
+                    "type": "image-desktop",
+                    "settings": [
+                        {
+                            "id": "image_image",
+                            "type": "image_picker",
+                            "label": "Image"
+                        }
+                    ]
+                },
+                "image-mobile": {
+                    "name": "image-mobile",
+                    "type": "image-mobile",
+                    "settings": [
+                        {
+                            "id": "image_image",
+                            "type": "image_picker",
+                            "label": "Image"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "image-desktop",
+                "image-mobile"
+            ]
+        },
+        "temoignages": {
+            "type": "temoignages",
+            "blocks": {
+                "titre": {
+                    "name": "titre",
+                    "type": "titre",
+                    "settings": [
+                        {
+                            "id": "text_heading",
+                            "type": "text",
+                            "label": "Heading",
+                            "default": "Heading"
+                        }
+                    ]
+                },
+                "temoignagne-item": {
+                    "name": "t\u00e9moignagne-item",
+                    "type": "temoignagne-item",
+                    "settings": [
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "This is some text inside of a div block."
+                        },
+                        {
+                            "id": "text_paragraph",
+                            "type": "text",
+                            "label": "Paragraph",
+                            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "titre",
+                "temoignagne-item"
+            ]
+        },
+        "header_announcement": {
+            "type": "header_announcement",
+            "blocks": {
+                "social-media-icon": {
+                    "name": "social-media-icon",
+                    "type": "social-media-icon",
+                    "settings": [
+                        {
+                            "id": "url_link",
+                            "type": "url",
+                            "label": "Link"
+                        },
+                        {
+                            "id": "image_image",
+                            "type": "image_picker",
+                            "label": "Image"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "social-media-icon"
+            ]
+        },
+        "bloc_de_texte": {
+            "type": "bloc_de_texte",
+            "blocks": {
+                "sous-titre": {
+                    "name": "Sous-titre",
+                    "type": "sous-titre",
+                    "settings": [
+                        {
+                            "id": "text_heading",
+                            "type": "text",
+                            "label": "Heading",
+                            "default": "Heading"
+                        }
+                    ]
+                },
+                "grand-texte": {
+                    "name": "Grand-texte",
+                    "type": "grand-texte",
+                    "settings": [
+                        {
+                            "id": "text_heading",
+                            "type": "text",
+                            "label": "Heading",
+                            "default": "Heading"
+                        }
+                    ]
+                },
+                "paragraphe": {
+                    "name": "Paragraphe",
+                    "type": "paragraphe",
+                    "settings": [
+                        {
+                            "id": "text_paragraph",
+                            "type": "text",
+                            "label": "Paragraph",
+                            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+                        }
+                    ]
+                },
+                "bouton": {
+                    "name": "Bouton",
+                    "type": "bouton",
+                    "settings": [
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "Button Text"
+                        },
+                        {
+                            "id": "url_link",
+                            "type": "url",
+                            "label": "Link"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "sous-titre",
+                "grand-texte",
+                "paragraphe",
+                "bouton"
+            ]
+        },
+        "image_with_text": {
+            "type": "image_with_text"
+        },
+        "featured_products": {
+            "type": "featured_products"
+        },
+        "featured_collections": {
+            "type": "featured_collections",
+            "blocks": {
+                "block": {
+                    "type": "block",
+                    "name": "Block"
+                }
+            },
+            "block_order": [
+                "block"
+            ]
+        },
+        "blog_posts": {
+            "type": "blog_posts"
+        },
+        "picto_reassurance": {
+            "type": "picto_reassurance",
+            "blocks": {
+                "icon-et-texte": {
+                    "name": "icon-et-texte",
+                    "type": "icon-et-texte",
+                    "settings": [
+                        {
+                            "id": "image_image",
+                            "type": "image_picker",
+                            "label": "Image"
+                        },
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "SAV international"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "icon-et-texte"
+            ]
+        },
+        "custom_liquid": {
+            "type": "custom_liquid"
+        },
+        "collection_product_d": {
+            "type": "collection_product_d"
+        },
+        "newsletter": {
+            "type": "newsletter"
+        },
+        "texte_bloc_home_page": {
+            "type": "texte_bloc_home_page",
+            "blocks": {
+                "sous-titre": {
+                    "name": "Sous-titre",
+                    "type": "sous-titre",
+                    "settings": [
+                        {
+                            "id": "text_heading",
+                            "type": "text",
+                            "label": "Heading",
+                            "default": "Heading"
+                        }
+                    ]
+                },
+                "grand-texte": {
+                    "name": "Grand-texte",
+                    "type": "grand-texte",
+                    "settings": [
+                        {
+                            "id": "text_heading",
+                            "type": "text",
+                            "label": "Heading",
+                            "default": "Heading"
+                        }
+                    ]
+                },
+                "paragraphe": {
+                    "name": "Paragraphe",
+                    "type": "paragraphe",
+                    "settings": [
+                        {
+                            "id": "text_paragraph",
+                            "type": "text",
+                            "label": "Paragraph",
+                            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+                        }
+                    ]
+                },
+                "bouton": {
+                    "name": "Bouton",
+                    "type": "bouton",
+                    "settings": [
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "Button Text"
+                        },
+                        {
+                            "id": "url_link",
+                            "type": "url",
+                            "label": "Link"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "sous-titre",
+                "grand-texte",
+                "paragraphe",
+                "bouton"
+            ]
+        },
+        "bouton_seul": {
+            "type": "bouton_seul"
+        },
+        "seo_hp": {
+            "type": "seo_hp"
+        },
+        "picto_v2": {
+            "type": "picto_v2",
+            "blocks": {
+                "icon-et-texte": {
+                    "name": "icon-et-texte",
+                    "type": "icon-et-texte",
+                    "settings": [
+                        {
+                            "id": "image_image",
+                            "type": "image_picker",
+                            "label": "Image"
+                        },
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "SAV international"
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "icon-et-texte"
+            ]
+        },
+        "faq": {
+            "type": "faq",
+            "blocks": {
+                "faq-question": {
+                    "name": "FAQ-Question",
+                    "type": "faq-question",
+                    "settings": [
+                        {
+                            "id": "text_text",
+                            "type": "text",
+                            "label": "Text",
+                            "default": "Question FAQ"
+                        },
+                        {
+                            "id": "text_paragraph",
+                            "type": "text",
+                            "label": "Paragraph",
+                            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+                        }
+                    ]
+                }
+            },
+            "block_order": [
+                "faq-question"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "image_pleine_largeur",
+        "temoignages",
+        "header_announcement",
+        "bloc_de_texte",
+        "image_with_text",
+        "featured_products",
+        "featured_collections",
+        "blog_posts",
+        "picto_reassurance",
+        "custom_liquid",
+        "collection_product_d",
+        "newsletter",
+        "texte_bloc_home_page",
+        "bouton_seul",
+        "seo_hp",
+        "picto_v2",
+        "faq"
+    ]
+}

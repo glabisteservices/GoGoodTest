@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "article_content": {
+            "type": "article_content"
+        },
+        "related_articles": {
+            "type": "related_articles"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "article_content",
+        "related_articles"
+    ]
+}
