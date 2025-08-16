@@ -1,0 +1,25 @@
+<a href="{{ section.settings.url_link }}" class="button-2 w-button"> {{ section.settings.text_text }} </a> {% schema %} {
+    "tag": "section",
+    "name": "Bouton Seul",
+    "class": "bouton-seul",
+    "settings": [
+        {
+            "id": "url_link",
+            "type": "url",
+            "label": "Link"
+        },
+        {
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "Button Text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Bouton Seul",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
